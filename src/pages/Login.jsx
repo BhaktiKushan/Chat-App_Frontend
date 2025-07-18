@@ -14,7 +14,7 @@ const Login = () => {
   const loginHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/user/login', {
+      const { data } = await axios.post('https://chat-app-backend-drnx.onrender.com/api/user/login', {
         email,
         password,
       });

@@ -14,7 +14,7 @@ const Register = () => {
   const registerHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/user/register', {
+      const { data } = await axios.post('https://chat-app-backend-drnx.onrender.com/api/user/register', {
         name,
         email,
         password,

@@ -4,7 +4,7 @@ import axios from 'axios';
 import io from 'socket.io-client';
 import { useNavigate } from 'react-router-dom';
 
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://chat-app-backend-drnx.onrender.com';
 let socket;
 
 const ChatPage = () => {
@@ -18,7 +18,7 @@ const ChatPage = () => {
   const [isTyping, setIsTyping] = useState(false);
   const [onlineUsers, setOnlineUsers] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
-  const [activeSection, setActiveSection] = useState('chats'); // 'chats' or 'users'
+  const [activeSection, setActiveSection] = useState('chats');
   const navigate = useNavigate();
   const typingTimeout = useRef(null);
 
